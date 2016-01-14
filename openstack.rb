@@ -1,13 +1,15 @@
 require 'fog'
 
-auth_url = "https://compute.datacentred.io:5000/v3/auth/tokens"
+auth_url = "http://devstack.datacentred.io:5000/v3/auth/tokens"
 
 OPENSTACK_ARGS = {
   :provider           => 'OpenStack',
   :openstack_auth_url => auth_url,
-  :openstack_username => 'stronghold',
+  :openstack_username => 'admin',
   :openstack_api_key  => ENV['OPENSTACK_PASSWORD'],
-  :openstack_domain_id  => 'default'
+  :openstack_domain_id  => 'default',
+  :openstack_identity_prefix => 'v3',
+  :openstack_endpoint_path_matches => //
 }
 
 module OpenStackConnection
