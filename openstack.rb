@@ -8,6 +8,7 @@ OPENSTACK_ARGS = {
   :openstack_username => 'admin',
   :openstack_api_key  => ENV['OPENSTACK_PASSWORD'],
   :openstack_domain_id  => 'default',
+  :openstack_project_name => 'admin',
   :openstack_identity_prefix => 'v3',
   :openstack_endpoint_path_matches => //
 }

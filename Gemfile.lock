@@ -1,5 +1,5 @@
 GIT
-  remote: https://github.com/fog/fog.git
+  remote: https://github.com/seanhandley/fog.git
   revision: b7bdfce14929edbb5ee59178dbe7654f86d51069
   branch: master
   specs:
